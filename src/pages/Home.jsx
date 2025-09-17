@@ -15,11 +15,14 @@ export const Home = () => {
 
     {/* Footer */}
 
-
+    <p>buna basarak temayi degistirebilirsin</p><br></br>
     <div className="text-3xl font-bold underline">
-        Hello world!
-    </div>
+        Ceza'ya selam, catismaya devam!
+    </div><br></br><br></br><br></br>
 
+    <div className="items-center justify-center flex" >
+    <img src="/src/assets/image.png" className="w-150"></img>
+    </div>
     </div>
   )
 }
