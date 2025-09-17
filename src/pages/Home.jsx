@@ -1,4 +1,5 @@
 import { ThemeToggle } from "../components/ThemeToggle"
+import img06 from '/public/image.png'
 
 export const Home = () => {
   return (
@@ -21,7 +22,7 @@ export const Home = () => {
     </div><br></br><br></br><br></br>
 
     <div className="items-center justify-center flex" >
-    <img src="/img/image.png" className="w-150"></img>
+    <img src={img06} className="w-150"></img>
     </div>
     </div>
   )
