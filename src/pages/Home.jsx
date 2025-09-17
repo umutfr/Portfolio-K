@@ -21,7 +21,7 @@ export const Home = () => {
     </div><br></br><br></br><br></br>
 
     <div className="items-center justify-center flex" >
-    <img src="/src/assets/image.png" className="w-150"></img>
+    <img src="/src/img/image.png" className="w-150"></img>
     </div>
     </div>
   )
