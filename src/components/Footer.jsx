@@ -30,7 +30,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <p className="text-sm text-muted-foreground text-center">
-          © {new Date().getFullYear()} <span className="text-primary font-semibold">Doom Portfolio</span>. All rights reserved.
+          © {new Date().getFullYear()} All rights reserved.
         </p>
       </div>
       <div>
