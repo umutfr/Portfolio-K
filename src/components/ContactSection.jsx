@@ -1,28 +1,27 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
 import { cn } from '@/lib/utils'
-import { useToast } from "../hooks/use-toast"
+import { useToast } from "@/hooks/use-toast"
 import { useState } from "react";
-import { Toast } from "@/components/ui/toast";
+
 
 
 export const ContactSection = () => {
     const { toast } = useToast();
-    const [isSubmitting, setSubmitting] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
 
     const handleSubmit = (e) => {
             e.preventDefault()
 
-            setSubmitting(true);
+            setIsSubmitting(true);
 
             setTimeout(() => {
                 toast({
                     title: "Message sent!",
                     description: "Thank you for your message. I'll get back to you soon",
-                })
-
-
-            }, 1500);
-            setSubmitting(false);
+            });
+            setIsSubmitting(false);
+            },1500);
         };
     
 
@@ -134,7 +133,6 @@ export const ContactSection = () => {
                             )}
                             >
                                 {isSubmitting ? "Sending..." : "Send Message"}
-                                Send Message
                                 <Send size={16}/>
                             </button>
 
