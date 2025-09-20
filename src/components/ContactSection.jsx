@@ -33,20 +33,20 @@ export const ContactSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, temporibus a praesentium ratione excepturi alias eveniet, illum facere dicta quisquam modi, ullam tempore.
+                    Looking to collaborate or share ideas? I’m always open to new opportunities.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
                         <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-                        <div className="space-y-6 justify-center">
+                        <div className="space-y-6 text-left">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Mail className="text-primary"/>
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Email</h4>
-                                    <a href="mailto:asd@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">asd@gmail.com
+                                    <a href="mailto:asd@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">umutw4141@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ export const ContactSection = () => {
                                 <div>
                                     <h4 className="font-medium">Phone</h4>
                                     <a href="tel:+901234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                                        +90 123 456 78 90
+                                        +90 538 438 41 06
                                     </a>
                                 </div>
                             </div>
@@ -78,11 +78,12 @@ export const ContactSection = () => {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">Connect With Me</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="" target="_blank">
+                                <a href="https://www.linkedin.com/in/umut-g/" target="_blank"
+                                className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]">
                                     
                                     <Linkedin/>
                                 </a>
-                                <a href="" target="_blank">
+                                <a href="https://www.instagram.com/umut.exw/" target="_blank" className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]">
                                     <Instagram/>
                                 </a>
                             </div>
@@ -102,7 +103,7 @@ export const ContactSection = () => {
                                 name="name"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                placeholder="Ad Soyad"></input>
+                                placeholder="Your Name"></input>
                             </div>
 
                             <div>
@@ -113,7 +114,7 @@ export const ContactSection = () => {
                                 name="email"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                placeholder="asd@gmail.com"></input>
+                                placeholder="example@gmail.com"></input>
                             </div>
 
                             <div>
@@ -135,19 +136,9 @@ export const ContactSection = () => {
                                 {isSubmitting ? "Sending..." : "Send Message"}
                                 <Send size={16}/>
                             </button>
-
-
-
-
-
                         </form>
-
                     </div>
-                    
                 </div>
-
-
-
             </div>
         </section>
     )

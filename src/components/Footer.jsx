@@ -1,4 +1,4 @@
-import { ArrowUp } from "lucide-react"
+import { ArrowUp, X } from "lucide-react"
 import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 
 export const BackToTop = () => {
@@ -15,24 +15,15 @@ export const Footer = () => {
       <div className="container mx-auto max-w-5xl py-12 px-6 flex flex-col items-center gap-6">
         {/* Sosyal medya ikonları */}
         <div className="flex space-x-6">
-  <a
-    href="#"
-    className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]"
-  >
-    <Github className="h-5 w-5" />
-  </a>
-  <a
-    href="#"
-    className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]"
-  >
-    <Linkedin className="h-5 w-5" />
-  </a>
-  <a
-    href="#"
-    className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]"
-  >
-    <Twitter className="h-5 w-5" />
-  </a>
+        <a
+            href="https://github.com/umutfr"
+            target="_blank"
+            className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]"
+        >
+            <Github className="h-5 w-5" />
+        </a>
+
+
   
 </div>
 
@@ -44,12 +35,12 @@ export const Footer = () => {
       </div>
       <div>
         <button
-  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-  className="fixed bottom-6 right-6 p-3 bg-primary text-primary-foreground rounded-full shadow-lg hover:scale-110 hover:drop-shadow-[0_0_12px_hsl(var(--primary))] transition-transform z-50"
-  aria-label="Back to top"
->
-  <ArrowUp className="h-5 w-5" />
-</button>
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed bottom-6 right-6 p-3 bg-primary text-primary-foreground rounded-full shadow-lg hover:scale-110 hover:drop-shadow-[0_0_12px_hsl(var(--primary))] transition-transform z-50"
+            aria-label="Back to top"
+            >
+                <ArrowUp className="h-5 w-5" />
+        </button>
 
       </div>
       

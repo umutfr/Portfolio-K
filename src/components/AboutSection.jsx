@@ -9,14 +9,14 @@ export const AboutSection = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold">Web geliştirici ve web tasarlayicisi</h3>
+                        <h3 className="text-2xl font-semibold">Front-End Explorer & Tech Enthusiast</h3>
 
                         <p className="text-muted-foreground">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nisi blanditiis, magni aperiam consequuntur quisquam amet voluptatibus vero quis veritatis!
+                            As a 2-year developer with a background in computer programming, I build responsive, high-performance web applications using modern technologies. I focus on creating interfaces that are both visually appealing and easy to use.
                         </p>
 
                         <p className="text-muted-foreground">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit maiores ipsam beatae ullam libero, eos doloribus? Magnam autem necessitatibus molestiae rerum.
+                            I’m passionate about solving complex problems with elegant solutions and continuously learning new tools to stay ahead in the fast-evolving web landscape. My goal is to deliver web experiences that are functional, engaging, and memorable.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -38,7 +38,7 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Web Development</h4>
-                                    <p className="text-muted-foreground">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A accusantium consectetur magnam quo, eveniet dicta?</p>
+                                    <p className="text-muted-foreground">Developing modern, high-performance web applications and interfaces.</p>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +48,8 @@ export const AboutSection = () => {
                                     <User className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Web Development</h4>
-                                    <p className="text-muted-foreground">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A accusantium consectetur magnam quo, eveniet dicta?</p>
+                                    <h4 className="font-semibold text-lg">Interface & Experience Designer</h4>
+                                    <p className="text-muted-foreground">Building elegant, easy-to-use interfaces for modern web applications.</p>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +59,8 @@ export const AboutSection = () => {
                                     <Briefcase className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Web Development</h4>
-                                    <p className="text-muted-foreground">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A accusantium consectetur magnam quo, eveniet dicta?</p>
+                                    <h4 className="font-semibold text-lg">Emerging Web Developer</h4>
+                                    <p className="text-muted-foreground">Learning, experimenting, and contributing to modern web projects.</p>
                                 </div>
                             </div>
                         </div>

@@ -35,8 +35,7 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> Doom </span>Portfolio
-          </span>
+            <span className="text-glow text-foreground">Umut </span>Tech</span>
         </a>
 
         {/* desktop nav */}
