@@ -15,7 +15,7 @@ const projects = [
     {
 
         id: 1,
-        title: "EKAK Yalıtım Sayfası",
+        title: "EKAK Yalıtım Web Site",
         description: "Developed using HTML, CSS, and JS.",
         image: "../projects/project1.png",
         tags:["HTML", "CSS", "JavaScript"],
