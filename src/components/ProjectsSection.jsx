@@ -1,26 +1,26 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react"
 
 const projects = [
-    /*{
+    {
         id: 1,
-        title: "Karaoğlu İzolasyon Website",
-        description: "HTML, CCS ve JS kullanarak gelistirilmistir.",
-        image: "../projects/project1.png",
+        title: "Karaoğlu İzolasyon",
+        description: "Developed using HTML, CSS, and JS.",
+        image: "../projects/karaoglu-sirket.png",
         tags:["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://karaoglu-sirket-demo.vercel.app/",
+        githubUrl: "https://github.com/umutfr/Karaoglu-Izolasyon-Web-Site",
 
 
-    },*/
+    },
     {
 
         id: 1,
         title: "EKAK Yalıtım",
         description: "Developed using HTML, CSS, and JS.",
-        image: "../projects/project1.png",
+        image: "../projects/ekak-yalitim.png",
         tags:["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://ekakendustriyel.com.tr/",
+        githubUrl: "https://github.com/umutfr/EKAK-Yalitim-Web-Site",
     },
     /*{
         id: 1,
