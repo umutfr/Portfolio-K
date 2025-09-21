@@ -7,6 +7,7 @@ import { SkillsSection } from "../components/SkillsSection"
 import { ProjectsSection } from "../components/ProjectsSection"
 import { ContactSection } from "../components/ContactSection"
 import { Footer } from "../components/Footer"
+import ScrollProgressBar from "../components/ScrollProgressBar"
 
 
 
@@ -17,7 +18,7 @@ export const Home = () => {
       <ThemeToggle />
       {/* Background Effects */}
       <StarBackgorund/>
-
+      <ScrollProgressBar/>
       {/* Navbar */}
       <Navbar/>
     

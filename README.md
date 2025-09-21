@@ -34,4 +34,5 @@ npm install
 npm run dev
 
 ## 🙌 Credits  
-This portfolio project was built by following a tutorial from [PedroTech](https://www.youtube.com/@PedroTechnologies).
+This portfolio project was initially built following a tutorial from [PedroTech](https://www.youtube.com/@PedroTechnologies).  
+It has been **further developed and customized**, with additional features, design improvements, and unique enhancements added on top of the original tutorial.

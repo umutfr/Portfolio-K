@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Karaoğlu İzolasyon Website",
         description: "HTML, CCS ve JS kullanarak gelistirilmistir.",
-        image: "../transp.png",
+        image: "../projects/project1.png",
         tags:["HTML", "CSS", "JavaScript"],
         demoUrl: "#",
         githubUrl: "#",
@@ -36,17 +36,17 @@ const projects = [
 
 export const ProjectsSection = () => {
     return(
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="projects" className="py-24 px-4 relative ">
         <div className="container mx-auto mx-w-5xl items-center justify-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Featured <span className="text-primary">Projects</span></h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Here’s a look at some projects I’ve developed, emphasizing practical design and smooth performance.</p>
 
-            <div className="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  flex-wrap justify-center ">
+            <div className="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-wrap justify-center">
                 {projects.map((project,key) => (
-                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
+                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full max-w-md">
 
-                        <div className="h-max overflow-hidden">
+                        <div className="h-hax overflow-hidden">
                             <img src={project.image}
                             alt={project.title}
                             className="w-full max-w-150 h-auto object-cover transition-transform duration-500 group-hover:scale-110"/>
