@@ -32,3 +32,6 @@ npm install
 
 # start development server
 npm run dev
+
+## 🙌 Credits  
+This portfolio project was built by following a tutorial from [PedroTech](https://www.youtube.com/@PedroTechnologies).

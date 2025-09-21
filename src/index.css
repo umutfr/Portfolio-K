@@ -160,3 +160,24 @@
   padding: 0;
   text-align: center;
 }
+
+/* Scrollbar genişliği */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scrollbar track (arkaplan) */
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+/* Scrollbar thumb (kaydırma çubuğu) */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); /* Burada primary rengin devreye giriyor */
+  border-radius: 9999px; /* daha yuvarlak görünüm için */
+}
+
+/* Hover efekti */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-foreground);
+}
