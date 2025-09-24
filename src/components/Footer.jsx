@@ -1,5 +1,6 @@
 import { ArrowUp, X } from "lucide-react"
 import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const BackToTop = () => {
   const scrollToTop = () => {
@@ -7,6 +8,7 @@ export const BackToTop = () => {
   };
 }
 export const Footer = () => {
+    const { t } = useTranslation();
     return(
         <footer className="relative mt-20">
       {/* Üst çizgi */}
@@ -30,7 +32,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <p className="text-sm text-muted-foreground text-center">
-          © {new Date().getFullYear()} All rights reserved.
+          © {new Date().getFullYear()} {t("footer.copyright")}
         </p>
       </div>
       <div>

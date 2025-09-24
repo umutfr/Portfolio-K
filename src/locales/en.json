@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": ["Hello, ", "I'm ", "Umut"],
+    "subtitle": "I craft modern web experiences...",
+    "button": "View My Work",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "heading": "About Me",
+    "subheading": "Front-End Explorer & Tech Enthusiast",
+    "paragraph1": "As a 2-year developer, I build high-performance web applications using modern technologies.",
+    "paragraph2": "I’m passionate about solving complex problems and continuously learning.",
+    "downloadCV": "Download CV",
+    "getInTouch": "Get In Touch",
+    "skills": [
+      {
+        "title": "Web Development",
+        "description": "Developing modern, high-performance web applications and interfaces."
+      },
+      {
+        "title": "Interface Designer",
+        "description": "Building elegant, easy-to-use interfaces."
+      },
+      {
+        "title": "Emerging Web Developer",
+        "description": "Learning and contributing to modern web projects."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "My Skills",
+    "categories": {
+      "all": "All",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "tools": "Tools"
+    }
+  },
+    "projects": {
+        "heading": { "part1": "Featured", "part2": "Projects" },
+        "description": "Here’s a look at some projects I’ve developed.",
+        "viewGithub": "Check my Github",
+        "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "Developed using HTML, CSS, and JS." },
+        "ekak": { "title": "EKAK Yalıtım", "description": "Developed using HTML, CSS, and JS." }
+  },
+  "contact": {
+    "heading": "Contact",
+    "subheading": "Looking to collaborate or share ideas? I’m always open.",
+    "infoHeading": "Contact Information",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "getInTouch": { "p1": "Geti In ", "p2": "Touch" },
+    "phone" : "Phone",
+    "location" : "Location",
+    "name" : "Name",
+    "yourEmail" : "Email",
+    "yourMessage" : "Message",
+    "placeholders" : {"name":"Your Name", "email":"example@gmail.com", "message" : "Hello, I'd like to talk about..."}
+
+
+
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": ["Merhaba, ", "Ben ", "Umut"],
+    "subtitle": "Modern web deneyimleri oluşturuyorum...",
+    "button": "Projelerime Gözat",
+    "scroll": "Kaydır"
+  },
+  "about": {
+    "heading": "Hakkımda",
+    "subheading": "Front-End Geliştirici & Teknoloji Tutkunu",
+    "paragraph1": "2 yıllık deneyime sahip bir geliştirici olarak modern teknolojiler kullanarak yüksek performanslı web uygulamaları geliştiriyorum.",
+    "paragraph2": "Karmaşık problemleri çözmeyi ve sürekli öğrenmeyi seviyorum.",
+    "getInTouch": "İletişime Geç",
+    "downloadCV": "CV İndir",
+    "skills": [
+      {
+        "title": "Web Geliştirme",
+        "description": "Modern, yüksek performanslı web uygulamaları geliştiriyorum."
+      },
+      {
+        "title": "Arayüz Tasarımcısı",
+        "description": "Kullanıcı dostu ve şık arayüzler tasarlıyorum."
+      },
+      {
+        "title": "Yeni Nesil Web Geliştirici",
+        "description": "Modern web projeleri üzerinde öğreniyor ve katkı sağlıyorum."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "Yeteneklerim",
+    "categories": {
+      "all": "Tümü",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "tools": "Araçlar"
+    }
+  },
+
+  "projects": {
+    "heading": { "part1": "Öne Çıkan", "part2": "Projeler" },
+    "description": "Geliştirdiğim bazı projelere göz atın.",
+    "viewGithub": "Github'ımı Görüntüle",
+    "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "HTML, CSS ve JS kullanılarak geliştirildi." },
+    "ekak": { "title": "EKAK Yalıtım", "description": "HTML, CSS ve JS kullanılarak geliştirildi." }
+  },
+
+
+  "contact": {
+    "heading": "İletişim",
+    "subheading": "Fikir paylaşmak ya da iş birliği yapmak isterseniz buradayım.",
+    "infoHeading": "İletişim Bilgileri",
+    "sendMessage": "Mesaj Gönder",
+    "sending": "Gönderiliyor...",
+    "getInTouch": { "p1": "İletişime ", "p2": "Geç" },
+    "phone" : "Telefon",
+    "location" : "Konum",
+    "name" : "Adınız",
+    "yourEmail" : "Email",
+    "yourMessage" : "Mesajınız",
+    "placeholders" : {"name":"Adınız", "email":"ornek@gmail.com", "message" : "Merhaba, …hakkında konuşmak istiyorum."}
+
+  },
+  "footer": {
+    "copyright": "Tüm hakları saklıdır."
+  }
+}

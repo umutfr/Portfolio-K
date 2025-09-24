@@ -1,27 +1,26 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react"
+import { useTranslation } from "react-i18next";
+
 
 const projects = [
     {
         id: 1,
-        title: "Karaoğlu İzolasyon",
-        description: "Developed using HTML, CSS, and JS.",
+        titleKey: "projects.karaoglu.title",
+        descriptionKey: "projects.karaoglu.description",
         image: "../projects/karaoglu-sirket.png",
-        tags:["HTML", "CSS", "JavaScript"],
+        tags: ["HTML", "CSS", "JavaScript"],
         demoUrl: "https://karaoglu-sirket-demo.vercel.app/",
         githubUrl: "https://github.com/umutfr/Karaoglu-Izolasyon-Web-Site",
-
-
     },
     {
-
-        id: 1,
-        title: "EKAK Yalıtım",
-        description: "Developed using HTML, CSS, and JS.",
+        id: 2,
+        titleKey: "projects.ekak.title",
+        descriptionKey: "projects.ekak.description",
         image: "../projects/ekak-yalitim.png",
-        tags:["HTML", "CSS", "JavaScript"],
+        tags: ["HTML", "CSS", "JavaScript"],
         demoUrl: "https://ekakendustriyel.com.tr/",
         githubUrl: "https://github.com/umutfr/EKAK-Yalitim-Web-Site",
-    },
+    },    
     /*{
         id: 1,
         title: "Lorem ipsum dolor Sayfası",
@@ -35,12 +34,13 @@ const projects = [
 
 
 export const ProjectsSection = () => {
+    const { t } = useTranslation();
     return(
     <section id="projects" className="py-24 px-4 relative ">
         <div className="container mx-auto mx-w-5xl items-center justify-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Featured <span className="text-primary">Projects</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t("projects.heading.part1")}{" "} <span className="text-primary">{t("projects.heading.part2")}</span></h2>
 
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Here’s a look at some projects I’ve developed, emphasizing practical design and smooth performance.</p>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">{t("projects.description")}</p>
 
             <div className="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-wrap justify-center">
                 {projects.map((project,key) => (
@@ -64,8 +64,8 @@ export const ProjectsSection = () => {
 
                         
 
-                        <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                        <p className="text-muted-foreground text-sm mb-4">{project.description}
+                        <h3 className="text-xl font-semibold mb-1">{t(project.titleKey)}</h3>
+                        <p className="text-muted-foreground text-sm mb-4">{t(project.descriptionKey)}
 
                         </p>
                         <div className="flex items-center justify-between">
@@ -94,7 +94,7 @@ export const ProjectsSection = () => {
                 className="cosmic-button w-fit flex items-center mx-auto gap-2"
                 href="https://github.com/umutfr"
                 target="_blank">
-                    Check my Github <ArrowRight size={16}/>
+                    {t("projects.viewGithub")} <ArrowRight size={16}/>
                 </a>
 
             </div>

@@ -2,10 +2,15 @@ import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
 import { cn } from '@/lib/utils'
 import { useToast } from "@/hooks/use-toast"
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 
 
 
 export const ContactSection = () => {
+    const { t } = useTranslation();
+
+
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -29,16 +34,16 @@ export const ContactSection = () => {
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-                Get In <span>Touch</span>
+                {t("contact.getInTouch.p1")}<span className="text-primary">{t("contact.getInTouch.p2")}</span>
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Looking to collaborate or share ideas? I’m always open to new opportunities.
+                    {t("contact.subheading")}
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
-                        <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+                        <h3 className="text-2xl font-semibold mb-6">{t("contact.infoHeading")}</h3>
                         <div className="space-y-6 text-left">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
@@ -56,7 +61,7 @@ export const ContactSection = () => {
                                     <Phone className="text-primary"/>
                                 </div>
                                 <div>
-                                    <h4 className="font-medium">Phone</h4>
+                                    <h4 className="font-medium">{t("contact.phone")}</h4>
                                     <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                                         +90 538 438 41 06
                                     </a>
@@ -68,7 +73,7 @@ export const ContactSection = () => {
                                     <MapPin className="text-primary"/>
                                 </div>
                                 <div>
-                                    <h4 className="font-medium">Location</h4>
+                                    <h4 className="font-medium">{t("contact.location")}</h4>
                                     <a className="text-muted-foreground hover:text-primary transition-colors">Kocaeli, Turkey
                                     </a>
                                 </div>
@@ -76,7 +81,7 @@ export const ContactSection = () => {
 
                         </div>
                         <div className="pt-8">
-                            <h4 className="font-medium mb-4">Connect With Me</h4>
+                            <h4 className="font-medium mb-4"></h4>
                             <div className="flex space-x-4 justify-center">
                                 <a href="https://www.linkedin.com/in/umut-g/" target="_blank"
                                 className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]">
@@ -92,39 +97,39 @@ export const ContactSection = () => {
 
                     <div className="bg-card p-8 rounded-lg shadow-xs"
                     onSubmit={handleSubmit}>
-                        <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+                        <h3 className="text-2xl font-semibold mb-6">{t("contact.sendMessage")}</h3>
 
                         <form className="space-y-6">
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name</label>
+                                <label htmlFor="name" className="block text-sm font-medium mb-2">{t("contact.name")}</label>
                                 <input
                                 type="text"
                                 id="name"
                                 name="name"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                placeholder="Your Name"></input>
+                                placeholder={t("contact.placeholders.name")}></input>
                             </div>
 
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium mb-2">Your Email</label>
+                                <label htmlFor="email" className="block text-sm font-medium mb-2">{t("contact.yourEmail")}</label>
                                 <input
                                 type="email"
                                 id="email"
                                 name="email"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                placeholder="example@gmail.com"></input>
+                                placeholder={t("contact.placeholders.email")}></input>
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium mb-2">Your Message</label>
+                                <label htmlFor="message" className="block text-sm font-medium mb-2">{t("contact.yourMessage")}</label>
                                 <textarea
                                 id="message"
                                 name="message"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                                placeholder="Hello, I'd like to talk about..."/>
+                                placeholder={t("contact.placeholders.message")}/>
                             </div>
                             <button
                             type="submit"
@@ -133,7 +138,7 @@ export const ContactSection = () => {
                                 "cosmic-button w-full flex items-center justify-center gap-2",
                             )}
                             >
-                                {isSubmitting ? "Sending..." : "Send Message"}
+                                {isSubmitting ? t("contact.sending") : t("contact.sendMessage")}
                                 <Send size={16}/>
                             </button>
                         </form>
