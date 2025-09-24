@@ -35,7 +35,7 @@
     ]
   },
   "skills": {
-    "heading": "Yeteneklerim",
+    "heading": {"he1" : "", "he2" : "Yeteneklerim"},
     "categories": {
       "all": "Tümü",
       "frontend": "Front-end",
@@ -43,7 +43,6 @@
       "tools": "Araçlar"
     }
   },
-
   "projects": {
     "heading": { "part1": "Öne Çıkan", "part2": "Projeler" },
     "description": "Geliştirdiğim bazı projelere göz atın.",
@@ -51,8 +50,6 @@
     "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "HTML, CSS ve JS kullanılarak geliştirildi." },
     "ekak": { "title": "EKAK Yalıtım", "description": "HTML, CSS ve JS kullanılarak geliştirildi." }
   },
-
-
   "contact": {
     "heading": "İletişim",
     "subheading": "Fikir paylaşmak ya da iş birliği yapmak isterseniz buradayım.",
@@ -66,9 +63,11 @@
     "yourEmail" : "Email",
     "yourMessage" : "Mesajınız",
     "placeholders" : {"name":"Adınız", "email":"ornek@gmail.com", "message" : "Merhaba, …hakkında konuşmak istiyorum."}
-
   },
   "footer": {
     "copyright": "Tüm hakları saklıdır."
+  },
+  "moon" : {
+    "moveMe" : "Tut Beni!"
   }
 }

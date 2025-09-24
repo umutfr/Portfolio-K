@@ -1,34 +1,40 @@
-// src/components/LanguageToggle.jsx
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import TrFlag from "@/assets/Flag_of_Turkey.png";
 import USAFlag from "@/assets/Flag_of_America.png";
+import DEFlag from "@/assets/Flag_of_Germany.png";
 
 export function LanguageToggle() {
-
   const { i18n } = useTranslation();
 
-  const toggleLanguage = () => {
-    const newLang = i18n.language === "tr" ? "en" : "tr";
-    i18n.changeLanguage(newLang);
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   };
 
-  return (
-    <motion.button
-      whileTap={{ scale: 0.9 }}
-      whileHover={{ scale: 1.1 }}
-      onClick={toggleLanguage}
-      className="px-3 py-1 rounded-lg bg-primary text-white text-sm font-semibold shadow-md transition-colors hover:bg-primary/80 flex items-center gap-2"
-    >
-      {i18n.language === "tr" ? (
-        <>
-            EN <img src={USAFlag} alt="ENG" className="w-7 h-5 border-1 rounded-lg" />
-        </>) : (
-        <>
-            TR <img src={TrFlag} alt="TR" className="w-7 h-5 border-1 rounded-lg" />
-        </>
+  const languages = [
+    { code: "tr", label: "TR", flag: TrFlag },
+    { code: "en", label: "EN", flag: USAFlag },
+    { code: "de", label: "DE", flag: DEFlag },
+  ];
 
-        )}
-    </motion.button>
+  return (
+    <div className="flex gap-2">
+      {languages.map((lang) => (
+        <motion.button
+          key={lang.code}
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.05 }}
+          onClick={() => changeLanguage(lang.code)}
+          className={`
+            px-3 py-1 rounded-lg text-sm font-semibold shadow-md flex items-center gap-2
+            transition-colors
+            ${i18n.language === lang.code ? "bg-primary text-white" : "bg-gray-200 text-gray-800"}
+          `}
+        >
+          {lang.label}
+          <img src={lang.flag} alt={lang.label} className="w-7 h-5 border rounded-lg" />
+        </motion.button>
+      ))}
+    </div>
   );
 }

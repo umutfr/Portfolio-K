@@ -1,0 +1,77 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": ["Hallo, ", "ich bin ", "Umut"],
+    "subtitle": "Ich gestalte moderne Web-Erlebnisse...",
+    "button": "Meine Arbeiten ansehen",
+    "scroll": "Scrollen"
+  },
+  "about": {
+    "heading": "Über Mich",
+    "subheading": "Front-End-Entwickler & Technik-Enthusiast",
+    "paragraph1": "Als Entwickler mit 2 Jahren Erfahrung baue ich leistungsstarke Webanwendungen mit modernen Technologien.",
+    "paragraph2": "Ich liebe es, komplexe Probleme zu lösen und kontinuierlich zu lernen.",
+    "downloadCV": "Schau auf meinem Github vorbei!",
+    "getInTouch": "Kontakt aufnehmen",
+    "skills": [
+      {
+        "title": "Webentwicklung",
+        "description": "Entwicklung moderner, leistungsstarker Webanwendungen und Benutzeroberflächen."
+      },
+      {
+        "title": "Interface Designer",
+        "description": "Elegante, benutzerfreundliche Oberflächen gestalten."
+      },
+      {
+        "title": "Emerging Web Developer",
+        "description": "Moderne Webprojekte lernen und daran mitwirken."
+      }
+    ]
+  },
+  "skills": {
+    "heading": {"he1" : "Meine ", "he2" : "Fähigkeiten"},
+    "categories": {
+      "all": "Alle",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "heading": { "part1": "Ausgewählte", "part2": "Projekte" },
+    "description": "Hier ist ein Einblick in einige Projekte, die ich entwickelt habe.",
+    "viewGithub": "Schau auf meinem Github vorbei",
+    "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "Entwickelt mit HTML, CSS und JS." },
+    "ekak": { "title": "EKAK Yalıtım", "description": "Entwickelt mit HTML, CSS und JS." }
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "subheading": "Wenn Sie zusammenarbeiten oder Ideen austauschen möchten, bin ich immer offen.",
+    "infoHeading": "Kontakt informationen",
+    "sendMessage": "Nachricht Senden",
+    "sending": "Senden...",
+    "getInTouch": { "p1": "Kontakt ", "p2": "Aufnehmen" },
+    "phone": "Telefon",
+    "location": "Standort",
+    "name": "Name",
+    "yourEmail": "E-Mail",
+    "yourMessage": "Nachricht",
+    "placeholders": {
+      "name": "Ihr Name",
+      "email": "beispiel@gmail.com",
+      "message": "Hallo, ich möchte über folgendes sprechen..."
+    }
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten."
+  },
+    "moon" : {
+    "moveMe" : "Zieh mich!"
+  }
+}

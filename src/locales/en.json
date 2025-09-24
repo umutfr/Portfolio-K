@@ -35,7 +35,7 @@
     ]
   },
   "skills": {
-    "heading": "My Skills",
+    "heading": {"he1" : "My ", "he2" : "Skills"},
     "categories": {
       "all": "All",
       "frontend": "Front-end",
@@ -63,11 +63,11 @@
     "yourEmail" : "Email",
     "yourMessage" : "Message",
     "placeholders" : {"name":"Your Name", "email":"example@gmail.com", "message" : "Hello, I'd like to talk about..."}
-
-
-
   },
   "footer": {
     "copyright": "All rights reserved."
+  },
+    "moon" : {
+    "moveMe" : "Move Me!"
   }
 }
