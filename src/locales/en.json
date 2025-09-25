@@ -8,66 +8,70 @@
   },
   "hero": {
     "title": ["Hello, ", "I'm ", "Umut"],
-    "subtitle": "I craft modern web experiences...",
-    "button": "View My Work",
-    "scroll": "Scroll"
+    "subtitle": "I design and develop modern, user-friendly web experiences.",
+    "button": "Explore My Work",
+    "scroll": "Scroll Down"
   },
   "about": {
     "heading": "About Me",
-    "subheading": "Front-End Explorer & Tech Enthusiast",
-    "paragraph1": "As a 2-year developer, I build high-performance web applications using modern technologies.",
-    "paragraph2": "I’m passionate about solving complex problems and continuously learning.",
-    "downloadCV": "Check my Github!",
-    "getInTouch": "Get In Touch",
+    "subheading": "Front-End Developer & Tech Enthusiast",
+    "paragraph1": "With 2 years of experience in web development, I create fast, responsive, and engaging applications using modern technologies.",
+    "paragraph2": "I’m passionate about solving real-world problems and constantly improving my skills to stay ahead in the evolving tech world.",
+    "downloadCV": "Visit My GitHub",
+    "getInTouch": "Let’s Connect",
     "skills": [
       {
         "title": "Web Development",
-        "description": "Developing modern, high-performance web applications and interfaces."
+        "description": "Building high-performance websites and scalable web applications."
       },
       {
-        "title": "Interface Designer",
-        "description": "Building elegant, easy-to-use interfaces."
+        "title": "UI Design",
+        "description": "Designing elegant, intuitive, and accessible interfaces."
       },
       {
-        "title": "Emerging Web Developer",
-        "description": "Learning and contributing to modern web projects."
+        "title": "Continuous Learner",
+        "description": "Exploring and contributing to emerging web technologies and projects."
       }
     ]
   },
   "skills": {
-    "heading": {"he1" : "My ", "he2" : "Skills"},
+    "heading": { "he1": "My ", "he2": "Skills" },
     "categories": {
       "all": "All",
-      "frontend": "Front-end",
-      "backend": "Back-end",
+      "frontend": "Front-End",
+      "backend": "Back-End",
       "tools": "Tools"
     }
   },
-    "projects": {
-        "heading": { "part1": "Featured", "part2": "Projects" },
-        "description": "Here’s a look at some projects I’ve developed.",
-        "viewGithub": "Check my Github",
-        "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "Developed using HTML, CSS, and JS." },
-        "ekak": { "title": "EKAK Yalıtım", "description": "Developed using HTML, CSS, and JS." }
+  "projects": {
+    "heading": { "part1": "Featured", "part2": "Projects" },
+    "description": "A selection of projects I’ve designed and developed.",
+    "viewGithub": "View on GitHub",
+    "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "Developed with HTML, CSS, and JavaScript." },
+    "ekak": { "title": "EKAK Yalıtım", "description": "Crafted using HTML, CSS, and JavaScript." }
   },
   "contact": {
-    "heading": "Contact",
-    "subheading": "Looking to collaborate or share ideas? I’m always open.",
-    "infoHeading": "Contact Information",
+    "heading": "Get in Touch",
+    "subheading": "Interested in working together or sharing ideas? I’d love to hear from you.",
+    "infoHeading": "Contact Details",
     "sendMessage": "Send Message",
     "sending": "Sending...",
-    "getInTouch": { "p1": "Geti In ", "p2": "Touch" },
-    "phone" : "Phone",
-    "location" : "Location",
-    "name" : "Name",
-    "yourEmail" : "Email",
-    "yourMessage" : "Message",
-    "placeholders" : {"name":"Your Name", "email":"example@gmail.com", "message" : "Hello, I'd like to talk about..."}
+    "getInTouch": { "p1": "Let’s ", "p2": "Connect" },
+    "phone": "Phone",
+    "location": "Location",
+    "name": "Name",
+    "yourEmail": "Email",
+    "yourMessage": "Message",
+    "placeholders": {
+      "name": "Enter your name",
+      "email": "your@email.com",
+      "message": "Hi! I’d like to discuss an opportunity..."
+    }
   },
   "footer": {
-    "copyright": "All rights reserved."
+    "copyright": "© All rights reserved."
   },
-    "moon" : {
-    "moveMe" : "Move Me!"
+  "moon": {
+    "moveMe": "Drag Me!"
   }
 }
