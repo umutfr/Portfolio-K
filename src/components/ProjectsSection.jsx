@@ -35,7 +35,7 @@ const projects = [
 
 export const ProjectsSection = () => {
     const { t } = useTranslation();
-    return(
+        return(
     <section id="projects" className="py-24 px-4 relative ">
         <div className="container mx-auto mx-w-5xl items-center justify-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t("projects.heading.part1")}{" "} <span className="text-primary">{t("projects.heading.part2")}</span></h2>
