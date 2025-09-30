@@ -12,6 +12,7 @@ import ScrollProgressBar from "../components/ScrollProgressBar"
 import { MoonBackground } from "../components/MoonBackground"
 import { SunBackground } from "../components/SunBackground"
 
+
 export const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 

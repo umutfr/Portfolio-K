@@ -69,5 +69,8 @@
   },
   "moon" : {
     "moveMe" : "Tut Beni!"
+  },
+  "google" : {
+    "recaptchaError": "Lütfen reCAPTCHA'yı tamamlayın."
   }
 }

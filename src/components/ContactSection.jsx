@@ -10,6 +10,8 @@ export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useRef();
+  const [message, setMessage] = useState("");
+const [charCount, setCharCount] = useState(0);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -142,28 +144,39 @@ export const ContactSection = () => {
                 />
               </div>
 
-              <div>
+              <div className="relative">
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  {t("contact.yourMessage")}
+                    {t("contact.yourMessage")}
                 </label>
                 <textarea
-                  id="message"
-                  name="message"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                  placeholder={t("contact.placeholders.message")}
+                    id="message"
+                    name="message"
+                    maxLength={400}
+                    value={message}
+                    onChange={(e) => {
+                    setMessage(e.target.value);
+                    setCharCount(e.target.value.length);
+                    }}
+                    required
+                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                    placeholder={t("contact.placeholders.message")}
                 />
-              </div>
-              {/* Hidden input ile time ekle */}
+                {/* Karakter sayacı */}
+                <span className="absolute bottom-2 right-2 text-sm text-muted-foreground">
+                    {charCount}/400
+                </span>
+                </div>
+
+                {/* Hidden input ile time ekle */}
                 <input
-                    type="hidden"
-                    name="time"
-                    value={new Date().toLocaleString()}
+                type="hidden"
+                name="time"
+                value={new Date().toLocaleString()}
                 />
               {/* Google reCAPTCHA */}
             <div className="flex flex-col items-center space-y-2">
             <label htmlFor="g-recaptcha" className="block text-sm font-medium">
-                {t("contact.verification")}
+                {t("google.recaptchaError")}
             </label>
             <div
                 id="g-recaptcha"

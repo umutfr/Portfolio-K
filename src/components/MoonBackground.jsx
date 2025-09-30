@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 
 export const MoonBackground = () => {
@@ -52,7 +52,6 @@ export const MoonBackground = () => {
     };
   }, [isDragging]);
 
-  // Dinamik gölge hesabı
   const calculateShadow = () => {
     const centerX = 50;
     const centerY = 50;
@@ -107,21 +106,23 @@ export const MoonBackground = () => {
       </div>
 
       {/* Dinamik mavi gölge efekti */}
-      <style jsx global>{`
-        .card-hover,
-        .bg-card,
-        section .bg-card,
-        .bg-secondary,
-        button:not(.fixed button) {
-          transition: box-shadow 0.3s ease !important;
-          box-shadow: ${calculateShadow()} !important;
-        }
-        
-        .card-hover:hover,
-        button:not(.fixed button):hover {
-          box-shadow: ${calculateShadow()}, 0 6px 20px rgba(59, 130, 246, 0.15) !important;
-        }
-      `}</style>
+      <style>
+        {`
+          .card-hover,
+          .bg-card,
+          section .bg-card,
+          .bg-secondary,
+          button:not(.fixed button) {
+            transition: box-shadow 0.3s ease !important;
+            box-shadow: ${calculateShadow()} !important;
+          }
+          
+          .card-hover:hover,
+          button:not(.fixed button):hover {
+            box-shadow: ${calculateShadow()}, 0 6px 20px rgba(59, 130, 246, 0.15) !important;
+          }
+        `}
+      </style>
     </>
   );
 };

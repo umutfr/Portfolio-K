@@ -73,5 +73,8 @@
   },
   "moon": {
     "moveMe": "Drag Me!"
+  },
+  "google" : {
+    "recaptchaError": "Please complete the reCAPTCHA."
   }
 }

@@ -43,8 +43,8 @@ export const ProjectsSection = () => {
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">{t("projects.description")}</p>
 
             <div className="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-wrap justify-center">
-                {projects.map((project,key) => (
-                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full max-w-md">
+                {projects.map((project) => (
+                    <div key={project.id} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full max-w-md">
 
                         <div className="h-hax overflow-hidden">
                             <img src={project.image}
@@ -56,7 +56,7 @@ export const ProjectsSection = () => {
                         <div className="p-6" >
                             <div className="flex flex-wrap gap-2 mb-4 items-center justify-center">
                                 {project.tags.map((tag) =>(
-                                    <span className="px-2 py-1 text-xs border font-medium rounded-full bg-secondary text-secondary-foreground">{tag}
+                                    <span key={tag} className="px-2 py-1 text-xs border font-medium rounded-full bg-secondary text-secondary-foreground">{tag}
                                     </span>
 
                                 ))}

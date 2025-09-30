@@ -73,7 +73,7 @@ export const StarBackgorund = () => {
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
             {stars.map((star) => (
-                <div key={star.id}
+                <div key={`${star.x}-${star.y}`}
                     className="star animate-pulse-subtle"
                     style={{
                         width: star.size + "px",
@@ -89,7 +89,7 @@ export const StarBackgorund = () => {
 
             {meteors.map((meteor) => (
                 <div
-                    key={meteor.id}
+                    key={`${meteor.x}-${meteor.y}`}
                     className="meteor animate-meteor"
                     style={{
                         width: meteor.size * 50 + "px",
