@@ -1,7 +1,7 @@
 // src/components/ThemeToggle.jsx
 import { Sun, Moon } from "lucide-react";
+import { useTheme } from "@/context/ThemeContext";
 import { cn } from "@/lib/utils";
-import { useTheme } from "@/context/ThemeContext"; // Context’den al
 
 export const ThemeToggle = () => {
   const { isDarkMode, toggleTheme } = useTheme();
