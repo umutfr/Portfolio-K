@@ -59,6 +59,7 @@
     "getInTouch": { "p1": "Kontakt ", "p2": "Aufnehmen" },
     "phone": "Telefon",
     "location": "Standort",
+    "locationText": "Kocaeli, Türkei",
     "name": "Name",
     "yourEmail": "E-Mail",
     "yourMessage": "Nachricht",

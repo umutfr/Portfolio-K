@@ -59,6 +59,7 @@
     "getInTouch": { "p1": "Let’s ", "p2": "Connect" },
     "phone": "Phone",
     "location": "Location",
+    "locationText": "Kocaeli, Turkey",
     "name": "Name",
     "yourEmail": "Email",
     "yourMessage": "Message",

@@ -59,6 +59,7 @@
     "getInTouch": { "p1": "İletişime ", "p2": "Geç" },
     "phone" : "Telefon",
     "location" : "Konum",
+    "locationText": "Kocaeli, Türkiye",
     "name" : "Adınız",
     "yourEmail" : "Email",
     "yourMessage" : "Mesajınız",

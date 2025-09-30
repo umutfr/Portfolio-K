@@ -112,7 +112,7 @@ export const ContactSection = () => {
                                 <div>
                                     <h4 className="font-medium">{t("contact.location")}</h4>
                                     <span className="text-muted-foreground">
-                                        Kocaeli, Turkey
+                                        {t("contact.locationText")}
                                     </span>
                                 </div>
                             </div>
