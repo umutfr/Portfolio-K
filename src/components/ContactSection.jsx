@@ -4,16 +4,18 @@ import { useToast } from "@/hooks/use-toast"
 import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
+import { useTheme } from "@/context/ThemeContext";
 
 export const ContactSection = () => {
-  const { t } = useTranslation();
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const form = useRef();
-  const [message, setMessage] = useState("");
-const [charCount, setCharCount] = useState(0);
+    const { isDarkMode } = useTheme();
+    const { t } = useTranslation();
+    const { toast } = useToast();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const form = useRef();
+    const [message, setMessage] = useState("");
+    const [charCount, setCharCount] = useState(0);
 
-  const sendEmail = (e) => {
+    const sendEmail = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -173,7 +175,7 @@ const [charCount, setCharCount] = useState(0);
                 name="time"
                 value={new Date().toLocaleString()}
                 />
-              {/* Google reCAPTCHA */}
+            {/* Google reCAPTCHA */}
             <div className="flex flex-col items-center space-y-2">
             <label htmlFor="g-recaptcha" className="block text-sm font-medium">
                 {t("google.recaptchaError")}
@@ -182,6 +184,7 @@ const [charCount, setCharCount] = useState(0);
                 id="g-recaptcha"
                 className="g-recaptcha"
                 data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                data-theme={isDarkMode ? "dark" : "light"}
             ></div>
             </div>
 
