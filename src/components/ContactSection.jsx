@@ -99,7 +99,7 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">{t("contact.phone")}</h4>
-                                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                                    <a href="tel:+905384384106" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Telefon ile ara: +90 538 438 41 06">
                                         +90 538 438 41 06
                                     </a>
                                 </div>
@@ -196,10 +196,11 @@ export const ContactSection = () => {
 
                             {/* Google reCAPTCHA */}
                             <div className="flex flex-col items-center space-y-2">
-                                <label htmlFor="g-recaptcha" className="block text-sm font-medium">
+                                <p className="block text-sm font-medium">
                                     {t("google.recaptchaError")}
-                                </label>
+                                </p>
                                 <div
+                                    aria-label="g-recaptcha"
                                     id="g-recaptcha"
                                     className="g-recaptcha"
                                     data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} // ✅ .env den al

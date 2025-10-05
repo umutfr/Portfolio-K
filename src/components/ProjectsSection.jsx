@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const projects = [
     {
         id: 1,
-        titleKey: "projects.karaoglu.title",
+        titleKey: "projects.karaoglu",
         descriptionKey: "projects.karaoglu.description",
         image: "../projects/karaoglu-sirket.png",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         id: 2,
-        titleKey: "projects.ekak.title",
+        titleKey: "projects.ekak",
         descriptionKey: "projects.ekak.description",
         image: "../projects/ekak-yalitim.png",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -48,8 +48,8 @@ export const ProjectsSection = () => {
 
                         <div className="h-hax overflow-hidden">
                             <img src={project.image}
-                            alt={project.title}
-                            className="w-full max-w-150 h-auto object-cover transition-transform duration-500 group-hover:scale-110"/>
+                            className="w-full max-w-150 h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                            alt={project.titleKey}/>
                             
                         </div>
 
