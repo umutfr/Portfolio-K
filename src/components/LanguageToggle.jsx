@@ -12,20 +12,21 @@ export function LanguageToggle() {
   };
 
   const languages = [
-    { code: "tr", label: "TR", flag: TrFlag, aria: "trbayragi"},
-    { code: "en", label: "EN", flag: USAFlag, aria: "enbayragi"},
-    { code: "de", label: "DE", flag: DEFlag, aria: "debayragi"},
+    { code: "tr", label: "TR", flag: TrFlag, name: "Türkçe" },
+    { code: "en", label: "EN", flag: USAFlag, name: "English" },
+    { code: "de", label: "DE", flag: DEFlag, name: "Deutsch" },
   ];
 
   return (
     <div className="flex gap-2">
       {languages.map((lang) => (
         <motion.button
-          aria-label={aria}    
           key={lang.code}
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.05 }}
           onClick={() => changeLanguage(lang.code)}
+          aria-label={`Change language to ${lang.name}`}
+          title={`Change language to ${lang.name}`}
           className={`
             px-3 py-1 rounded-lg text-sm font-semibold shadow-md flex items-center gap-2
             transition-colors
@@ -33,7 +34,11 @@ export function LanguageToggle() {
           `}
         >
           {lang.label}
-          <img src={lang.flag} alt={lang.label} className="w-7 h-5 border rounded-lg" />
+           <img
+            src={lang.flag}
+            alt={`${lang.name} flag`}
+            className="w-7 h-5 border rounded-lg"
+          />
         </motion.button>
       ))}
     </div>
