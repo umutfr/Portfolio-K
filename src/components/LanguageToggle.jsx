@@ -12,15 +12,16 @@ export function LanguageToggle() {
   };
 
   const languages = [
-    { code: "tr", label: "turkiye_bayrak", flag: TrFlag },
-    { code: "en", label: "amerika_bayrak", flag: USAFlag },
-    { code: "de", label: "almanya_bayrak", flag: DEFlag },
+    { code: "tr", label: "TR", flag: TrFlag, aria: "trbayragi"},
+    { code: "en", label: "EN", flag: USAFlag, aria: "enbayragi"},
+    { code: "de", label: "DE", flag: DEFlag, aria: "debayragi"},
   ];
 
   return (
     <div className="flex gap-2">
       {languages.map((lang) => (
         <motion.button
+          aria-label={aria}    
           key={lang.code}
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.05 }}
