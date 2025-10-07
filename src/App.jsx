@@ -4,9 +4,11 @@ import { Home } from "@/pages/Home";
 import { NotFound } from "@/pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
+    <>
     <ThemeProvider>
       <Toaster />
       <BrowserRouter>
@@ -16,6 +18,8 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
+    <Analytics/>
+    </>
   );
 }
 
