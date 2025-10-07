@@ -1,0 +1,12 @@
+# robots.txt for https://umutfr.dev
+# Bu dosya, arama motoru botlarına hangi sayfaları tarayabileceklerini belirtir.
+
+User-agent: *
+Allow: /
+
+# Eğer özel klasörlerin taranmasını istemiyorsan, aşağıya Disallow ekleyebilirsin
+# Disallow: /admin/
+# Disallow: /api/
+
+# Site haritası (sitemap) varsa belirtmek SEO için faydalıdır
+Sitemap: https://umutfr.dev/sitemap.xml
