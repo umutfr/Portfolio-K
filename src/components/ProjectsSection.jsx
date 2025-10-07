@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const projects = [
     {
         id: 1,
-        titleKey: "projects.karaoglu",
+        titleKey: "projects.karaoglu.title",
         descriptionKey: "projects.karaoglu.description",
         image: "../projects/karaoglu-sirket.png",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         id: 2,
-        titleKey: "projects.ekak",
+        titleKey: "projects.ekak.title",
         descriptionKey: "projects.ekak.description",
         image: "../projects/ekak-yalitim.png",
         tags: ["HTML", "CSS", "JavaScript"],
