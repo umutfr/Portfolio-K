@@ -71,12 +71,12 @@ export const ProjectsSection = () => {
                         <div className="flex items-center justify-between">
                         <div>
                             <a href="https://github.com/umutfr/Karaoglu-Izolasyon-Web-Sitesi">
-                            <Github size={20} className="text-foreground/80 hover:text-primary transition-colors duration-300"/>
+                            <Github aria-label="githb" size={20} className="text-foreground/80 hover:text-primary transition-colors duration-300"/>
                             </a>
                         </div>
                         <div>
-                            <a href="https://ekakendustriyel.com.tr/"
-                            target="_blank">
+                            <a href="https://ekakendustriyel.com.tr/" aria-label="ekaken"
+                            target="_blank" >
                             <ExternalLink size={20} className="text-foreground/80 hover:text-primary transition-colors duration-300"/>
                             </a>
                         </div>
@@ -92,7 +92,7 @@ export const ProjectsSection = () => {
             <div className="text-center mt-12">
                 <a 
                 className="cosmic-button w-fit flex items-center mx-auto gap-2"
-                href="https://github.com/umutfr"
+                href="https://github.com/umutfr" aria-label="githb"
                 target="_blank">
                     {t("projects.viewGithub")} <ArrowRight size={16}/>
                 </a>

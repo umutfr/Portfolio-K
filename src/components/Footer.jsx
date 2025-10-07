@@ -20,6 +20,7 @@ export const Footer = () => {
         <a
             href="https://github.com/umutfr"
             target="_blank"
+            aria-label="gith"
             className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]"
         >
             <Github className="h-5 w-5" />

@@ -120,11 +120,11 @@ export const ContactSection = () => {
 
                         <div className="pt-8">
                             <div className="flex space-x-4 justify-center">
-                                <a href="https://www.linkedin.com/in/umut-g/" target="_blank"
+                                <a href="https://www.linkedin.com/in/umut-g/" aria-label="linke" target="_blank"
                                   className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]">
                                   <Linkedin/>
                                 </a>
-                                <a href="https://www.instagram.com/umut.exw/" target="_blank"
+                                <a href="https://www.instagram.com/umut.exw/" aria-label="insta" target="_blank"
                                   className="text-muted-foreground hover:text-primary transition-transform transform hover:scale-110 hover:drop-shadow-[0_0_8px_hsl(var(--primary))]">
                                   <Instagram/>
                                 </a>
