@@ -12,9 +12,9 @@ export function LanguageToggle() {
   };
 
   const languages = [
-    { code: "tr", label: "TR", flag: TrFlag },
-    { code: "en", label: "EN", flag: USAFlag },
-    { code: "de", label: "DE", flag: DEFlag },
+    { code: "tr", label: "turkiye_bayrak", flag: TrFlag },
+    { code: "en", label: "amerika_bayrak", flag: USAFlag },
+    { code: "de", label: "almanya_bayrak", flag: DEFlag },
   ];
 
   return (
