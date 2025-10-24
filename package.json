@@ -22,6 +22,8 @@
     "lucide-react": "^0.544.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-i18next": "^15.7.3",
     "react-router-dom": "^7.9.1",
     "tailwind-merge": "^3.3.1"
