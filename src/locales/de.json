@@ -35,7 +35,7 @@
     ]
   },
   "skills": {
-    "heading": {"he1" : "Meine ", "he2" : "Fähigkeiten"},
+    "heading": { "he1": "Meine ", "he2": "Fähigkeiten" },
     "categories": {
       "all": "Alle",
       "frontend": "Frontend",
@@ -47,8 +47,14 @@
     "heading": { "part1": "Ausgewählte", "part2": "Projekte" },
     "description": "Hier ist ein Einblick in einige Projekte, die ich entwickelt habe.",
     "viewGithub": "Schau auf meinem Github vorbei",
-    "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "Entwickelt mit HTML, CSS und JS." },
-    "ekak": { "title": "EKAK Yalıtım", "description": "Entwickelt mit HTML, CSS und JS." }
+    "karaoglu_de": {
+      "title": "Karaoğlu Isolierung",
+      "description": "Eine moderne Website für ein Isolierungs- und Bauunternehmen, entwickelt mit React, Tailwind CSS und Vite."
+    },
+    "ekak": {
+      "title": "EKAK Yalıtım",
+      "description": "Entwickelt mit HTML, CSS und JS."
+    }
   },
   "contact": {
     "heading": "Kontakt",
@@ -72,10 +78,10 @@
   "footer": {
     "copyright": "Alle Rechte vorbehalten."
   },
-    "moon" : {
-    "moveMe" : "Zieh mich!"
+  "moon": {
+    "moveMe": "Zieh mich!"
   },
-  "google" : {
+  "google": {
     "recaptchaError": "Bitte vervollständigen Sie das reCAPTCHA."
   }
 }

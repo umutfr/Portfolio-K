@@ -47,8 +47,14 @@
     "heading": { "part1": "Featured", "part2": "Projects" },
     "description": "A selection of projects I’ve designed and developed.",
     "viewGithub": "View on GitHub",
-    "karaoglu": { "title": "Karaoğlu İzolasyon", "description": "Developed with HTML, CSS, and JavaScript." },
-    "ekak": { "title": "EKAK Yalıtım", "description": "Crafted using HTML, CSS, and JavaScript." }
+    "karaoglu_en": {
+      "title": "Karaoğlu Insulation",
+      "description": "A modern insulation and construction company website built with React, Tailwind CSS, and Vite."
+    },
+    "ekak": {
+      "title": "EKAK Yalıtım",
+      "description": "Crafted using HTML, CSS, and JavaScript."
+    }
   },
   "contact": {
     "heading": "Get in Touch",
@@ -75,7 +81,7 @@
   "moon": {
     "moveMe": "Drag Me!"
   },
-  "google" : {
+  "google": {
     "recaptchaError": "Please complete the reCAPTCHA."
   }
 }
