@@ -12,7 +12,7 @@ export const Footer = () => {
     return(
         <footer className="relative mt-20">
       {/* Üst çizgi */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/40 to-transparent"></div>
 
       <div className="container mx-auto max-w-5xl py-12 px-6 flex flex-col items-center gap-6">
         {/* Sosyal medya ikonları */}

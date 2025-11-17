@@ -68,7 +68,7 @@ export const MoonBackground = () => {
       <div className="fixed inset-0 pointer-events-none z-10">
         <div
           ref={moonRef}
-          className={`absolute w-20 h-20 rounded-full bg-gradient-to-br from-yellow-100 via-yellow-50 to-white
+          className={`absolute w-20 h-20 rounded-full bg-linear-to-br from-yellow-100 via-yellow-50 to-white
             shadow-lg transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 pointer-events-auto
             ${isDragging ? 'scale-110 cursor-grabbing' : 'cursor-grab hover:scale-105'}`}
           style={{

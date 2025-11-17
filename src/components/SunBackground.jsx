@@ -80,7 +80,7 @@ export const SunBackground = () => {
       <div className="fixed inset-0 pointer-events-none z-10">
         <div
           ref={sunRef}
-          className={`absolute w-20 h-20 rounded-full bg-gradient-to-br from-yellow-300 via-orange-300 to-orange-400
+          className={`absolute w-20 h-20 rounded-full bg-linear-to-br from-yellow-300 via-orange-300 to-orange-400
             transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 pointer-events-auto
             ${isDragging ? "scale-110 cursor-grabbing" : "cursor-grab hover:scale-105"}`}
           style={{
@@ -97,7 +97,7 @@ export const SunBackground = () => {
             {[...Array(8)].map((_, i) => (
               <div
                 key={i}
-                className="absolute w-1 h-6 bg-gradient-to-t from-yellow-400 to-orange-300 rounded-full animate-pulse"
+                className="absolute w-1 h-6 bg-linear-to-t from-yellow-400 to-orange-300 rounded-full animate-pulse"
                 style={{
                   top: "-12px",
                   left: "50%",
